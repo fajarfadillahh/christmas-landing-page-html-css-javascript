@@ -226,3 +226,25 @@ img {
     transform: rotate(-15deg);
   }
 }
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__img {
+    width: 320px;
+  }
+
+  &__img,
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__text {
+    width: 320px;
+    margin: 0 auto $margin-2;
+  }
+}
