@@ -111,6 +111,7 @@ img {
   border-radius: 5rem;
   font-size: 15px;
   font-weight: $font-semibold;
+  text-transform: capitalize;
   color: $body-color;
   transition: $transition-400;
 
@@ -131,4 +132,97 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+// ===== HEADER SECTION =====
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $body-color;
+  z-index: $z-fixed;
+  transition: $transition-400;
+
+  &__container {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: $font-semibold;
+    color: $title-color;
+
+    &-icon {
+      width: 1.5rem;
+    }
+  }
+
+  &__menu {
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      width: 100%;
+      top: -100%;
+      left: 0;
+      text-align: center;
+      padding: 4rem 0;
+      background-color: $body-color;
+      border-radius: 0 0 1.5rem 1.5rem;
+      box-shadow: 0 2px 8px hsl(0deg 4% 15% / 10%);
+      transition: $transition-400;
+    }
+
+    // show-menu
+    &.show-menu {
+      top: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $title-color;
+
+    &:hover {
+      color: $first-color;
+    }
+  }
+
+  &__button {
+    margin-top: $margin-1-5;
+  }
+
+  &__close,
+  &__toggle {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: $title-color;
+    cursor: pointer;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+  }
+
+  &__img {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+    transform: rotate(-15deg);
+  }
 }
