@@ -475,7 +475,7 @@ img {
 
     &-input {
       width: 100%;
-      padding: 1.25rem 2.75rem;
+      padding: 1.25rem 1.5rem;
       background-color: $body-color;
       font-size: 15px;
       color: $text-color;
@@ -613,6 +613,7 @@ img {
   font-size: 1.3rem;
   color: $body-color;
   transition: $transition-400;
+  z-index: $z-normal;
 
   // scroll action
   &.scroll-action {
