@@ -144,6 +144,11 @@ img {
   z-index: $z-fixed;
   transition: $transition-400;
 
+  // sticky header
+  &.sticky-action {
+    box-shadow: 0 2px 8px hsla(0, 4%, 15%, 0.1);
+  }
+
   &__container {
     height: $header-height;
     display: flex;
@@ -522,6 +527,10 @@ img {
     &-icon {
       width: 1.5rem;
     }
+  }
+
+  &__text {
+    font-size: 15px;
   }
 
   &__title {
