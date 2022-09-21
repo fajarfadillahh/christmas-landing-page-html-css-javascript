@@ -447,3 +447,50 @@ img {
     }
   }
 }
+
+// ===== MESSAGE SECTION =====
+.message {
+  &__container {
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    background-color: $first-color;
+    border-radius: 1.25rem;
+  }
+
+  &__form,
+  &__img {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__form {
+    &-title {
+      color: $body-color;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 1.25rem 2.75rem;
+      background-color: $body-color;
+      font-size: 15px;
+      color: $text-color;
+      border-radius: 5rem;
+      margin-bottom: $margin-1;
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: $font-medium;
+      }
+    }
+
+    &-button {
+      width: 100%;
+      background-color: $title-color;
+    }
+  }
+
+  &__img {
+    width: 200px;
+    transform: rotate(15deg);
+  }
+}
