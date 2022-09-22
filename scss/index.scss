@@ -859,3 +859,9 @@ img {
     }
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: hsl(355, 66%, 50%);
+  color: $body-color;
+}
