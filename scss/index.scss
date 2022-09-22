@@ -400,10 +400,11 @@ img {
 
     &-overlay {
       position: absolute;
-      top: -5rem;
-      left: -0.65rem;
-      width: 250px;
-      height: 250px;
+      top: -6rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 280px;
       background-color: $first-color;
       border-radius: 50%;
       z-index: 0;
@@ -717,5 +718,144 @@ img {
 
   .footer__group {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .header__list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 2rem;
+  }
+
+  .home {
+    &__container {
+      gap: 1rem;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__text {
+      margin: 0 0 $margin-2;
+    }
+
+    &__img {
+      width: 500px;
+    }
+  }
+
+  .giving {
+    &__group {
+      grid-template-columns: repeat(3, 170px);
+    }
+
+    &__content {
+      &-title {
+        font-size: 20px;
+      }
+
+      &-img {
+        width: 150px;
+      }
+    }
+  }
+
+  .celebrate {
+    &__img {
+      width: 500px;
+    }
+
+    &__text {
+      width: 430px;
+    }
+  }
+
+  .gift {
+    &__content {
+      padding: 2rem 1.5rem;
+
+      &-price {
+        font-size: 20px;
+      }
+
+      &-img {
+        width: 150px;
+        margin-bottom: $margin-1;
+      }
+    }
+  }
+
+  .new {
+    &__content {
+      width: 250px;
+
+      &-img {
+        width: 150px;
+      }
+
+      &-price {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .message {
+    &__container {
+      padding: 6rem 0;
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      gap: 0;
+    }
+
+    &__form {
+      text-align: left;
+
+      &-button {
+        width: initial;
+      }
+    }
+
+    &__img {
+      width: 350px;
+    }
+  }
+
+  .footer {
+    &__group {
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+    }
+
+    &__title,
+    &__logo {
+      font-size: 20px;
+
+      &-icon {
+        width: 2rem;
+      }
+    }
+
+    &__img1,
+    &__img2 {
+      width: 130px;
+    }
+
+    &__img1 {
+      top: 100%;
+      left: 0;
+    }
+
+    &__img2 {
+      top: 40%;
+      right: -4rem;
+    }
   }
 }
