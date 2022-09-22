@@ -865,3 +865,18 @@ img {
   background-color: hsl(355, 66%, 50%);
   color: $body-color;
 }
+
+// ===== ::-WEBKIT-SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($color: #000, $alpha: 0.02);
+
+  &-thumb {
+    background-color: rgba($color: #000, $alpha: 0.2);
+    border-radius: 5rem;
+
+    &:hover {
+      background-color: rgba($color: #000, $alpha: 0.3);
+    }
+  }
+}
